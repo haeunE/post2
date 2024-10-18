@@ -28,7 +28,7 @@ public class UserDetailsImpl implements UserDetails, OAuth2User{
 	private Map<String, Object> attributes;
 	
 	//기본, 카카오 로그인 시 사용하는 생성자
-	private UserDetailsImpl(User user) {
+	public UserDetailsImpl(User user) {
 		this.user = user;
 	}
 	//OAuth2를 이용해서 로그인할 경우 사용할 생성자
